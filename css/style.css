@@ -1,6 +1,6 @@
 body {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 4em;
+  padding-right: 4em;
 }
 button {
   padding: 20px 40px;
@@ -25,28 +25,30 @@ p {
   color: #ffffff;
 }
 .header_background_image {
-  background-image: url('../img/Hue_Saturation.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
+  overflow: hidden;
+  height: 896px;
 }
-.header_logo {
-  z-index: 6;
-  position: absolute;
-  top: -35px;
-  right: 748px;
-}
-.header_image1 {
+.header_img1 {
   z-index: 3;
 }
-.header_image2 {
-  z-index: 4;
-}
-.header_image3 {
+.header_img2 {
+  height: 876px;
   z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header_img3 {
+  z-index: 2;
+}
+.header_text {
+  z-index: 7;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .package_title {
   font-size: 30px;
@@ -67,6 +69,9 @@ p {
   cursor: pointer;
 }
 .order {
+  width: 93%;
+  overflow: hidden;
+  z-index: 1;
   background-image: url('../img/background wall.png');
   background-repeat: no-repeat;
   background-size: cover;
